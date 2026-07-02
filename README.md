@@ -23,8 +23,7 @@ A simple Task Manager built using HTML, CSS, JavaScript, and Supabase.
 - Supabase
 
 ## Live Demo
-
-(Add your Netlify link)
+https://task-manager-100.netlify.app/
 
 ## Learning Outcomes
 
