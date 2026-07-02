@@ -1,0 +1,43 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+
+  <link rel="stylesheet" href="./css/dashboard.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Task Dashboard</h1>
+
+    <!-- logout user button -->
+    <button id="logoutBtn">Logout</button>
+
+    <div class="task-box">
+      <div class="form-group">
+        <label>Title</label>
+        <input type="text" id="title" placeholder="Enter task title" />
+      </div>
+
+      <div class="form-group">
+        <label>Description</label>
+        <textarea
+          id="description"
+          rows="4"
+          placeholder="Enter task description"
+        ></textarea>
+      </div>
+
+      <button id="addTaskBtn">Add Task</button>
+
+      <p id="message"></p>
+    </div>
+
+    <div class="task-list" id="taskList"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <script src="./js/supabase.js"></script>
+
+  <script src="./js/dashboard.js"></script>
+</body>

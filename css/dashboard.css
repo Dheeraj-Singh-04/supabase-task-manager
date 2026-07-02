@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: 50px auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.task-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Only Add Task button */
+#addTaskBtn {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+#addTaskBtn:hover {
+  background: #1d4ed8;
+}
+
+#message {
+  text-align: center;
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+}
+
+.task-list {
+  margin-top: 30px;
+}
+
+.task {
+  background: white;
+  padding: 18px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.task h3 {
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.task p {
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.status {
+  display: inline-block;
+  padding: 5px 12px;
+  background: orange;
+  color: white;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Buttons container */
+.task-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* Complete & Delete buttons */
+.task-buttons button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+}
+
+.task-buttons button:first-child {
+  background: #22c55e;
+}
+
+.task-buttons button:first-child:hover {
+  background: #16a34a;
+}
+
+.task-buttons button:last-child {
+  background: #ef4444;
+}
+
+.task-buttons button:last-child:hover {
+  background: #dc2626;
+}
+
+#logoutBtn {
+  width: 120px;
+  padding: 10px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#logoutBtn:hover {
+  background: #dc2626;
+}
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .task-box {
+    padding: 20px;
+  }
+
+  input,
+  textarea {
+    font-size: 15px;
+  }
+
+  #addTaskBtn,
+  #logoutBtn {
+    width: 100%;
+  }
+
+  .task-buttons {
+    flex-direction: column;
+  }
+
+  .task-buttons button {
+    width: 100%;
+  }
+
+  .task {
+    padding: 15px;
+  }
+}
