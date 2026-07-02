@@ -26,10 +26,6 @@ A simple Task Manager built using HTML, CSS, JavaScript, and Supabase.
 
 (Add your Netlify link)
 
-## Screenshots
-
-(Add screenshots)
-
 ## Learning Outcomes
 
 - Supabase Authentication
